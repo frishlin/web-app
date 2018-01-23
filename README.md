@@ -1,0 +1,4 @@
+Búsquedas:
+
+Restaurante
+Comida rapida

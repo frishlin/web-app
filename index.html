@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+
+    <div class="container-fluid background-container">
+
+
+          <!-- Contiene las letras Foodmap -->
+          <div class="row">
+            <div class="col-lg-12 col-xs-12 text-center font-style">
+              Foodmap
+            </div>
+          </div>
+          <!-- línea con cuadros -->
+
+          <!-- mapa -->
+          <div class="row">
+            <div class="col-lg-12 col-xs-12 mapa" >
+              <iframe class="img-responsive" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3762.8818556948772!2d-99.16178858552587!3d19.417509986892878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scomida+Chihuahua%2C+Roma+Norte%2C+Ciudad+de+M%C3%A9xico%2C+CDMX!5e0!3m2!1ses!2smx!4v1516570396051" width="1600" height="230" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+          </div>
+
+
+    <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
+        <h1 class="page-header">
+          Comida cerca de ti
+        </h1>
+
+        <!-- TABLA INICIA -->
+        <table id="tabla" class="table table-striped">
+          <thead>
+            <tr>
+              <td colspan="1">
+                <input id="buscar" type="text" class="form-control" placeholder="Filtrar restaurantes" />
+              </td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="">
+                <button type="button" class="btn btn-primary btn-lg btn-img1" data-toggle="modal" data-target="#miModal1">Restaurante</button>
+              </td>
+            </tr>
+            <tr>
+              <td class="">
+                <button type="button" class="btn btn-primary btn-lg btn-img2" data-toggle="modal" data-target="#miModal2">Restaurante</button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <button type="button" class="btn btn-primary btn-lg btn-img4" data-toggle="modal" data-target="#miModal4">Comida rapida</button>
+              </td>
+
+            </tr>
+            <tr>
+              <td>
+                <button type="button" class="btn btn-primary btn-lg btn-img5" data-toggle="modal" data-target="#miModal5">Comida rapida</button>
+              </td>
+
+            </tr>
+
+          </tbody>
+        </table>
+        <!-- TABLA FINALIZA -->
+      </div>
+    </div>
+
+
+
+      <!-- Contenedor de Modales-->
+<!-- modal 1 -->
+      <div class="modal fade" id="miModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      	       <div class="modal-dialog" role="document">
+      		         <div class="modal-content">
+      			            <div class="modal-header">
+      				                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      					                 <span aria-hidden="true">&times;</span>
+      				                </button>
+      				                <h4 class="modal-title text-center" id="myModalLabel">
+                                Restaurante "Krikas"
+                              </h4>
+      			            </div>
+      			            <div class="modal-body">
+                          <div class="row">
+                            <div class="col-lg-12 col-xs-12 text-center">
+                              <iframe class="center" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.8987666590792!2d-99.1660164855259!3d19.416779486893343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff390c617635%3A0x94e17e6df6ad68d0!2sKrikas!5e0!3m2!1ses!2smx!4v1516603109766" width="250" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            </div>
+                            <div class="col-lg-6 text-center">
+                                <br>
+                                Esquina Chihuahua,<br>
+                                Eje 2 Ponte Monterrey 207,<br>
+                                Roma Nte., 06700, CDMX
+                            </div>
+                            <div class="col-lg-6 text-center">
+                              <br>
+                              <abbr title="Phone">Tel:</abbr> 01 55 5264 4201 <br>
+                              Horario: 08 - 19 <br>
+                              Rango de precio: 100 - 500
+                            </div>
+                            <div class="col-lg-12 col-xs-12 text-center">
+                                <br>
+                                <button type="button" class="btn btn-warning">Pedir ahora</button>
+                            </div>
+
+                          </div>
+
+      			            </div>
+      		        </div>
+      	       </div>
+            </div>
+
+<!-- modal 2  -->
+
+<div class="modal fade" id="miModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+         <div class="modal-dialog" role="document">
+             <div class="modal-content">
+                  <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                           <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4 class="modal-title text-center" id="myModalLabel">
+                          Restaurante "Pan Comido"
+                        </h4>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-lg-12 col-xs-12 text-center">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d30103.190291050134!2d-99.18133745079217!3d19.416778634941988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1span+comido+roma!5e0!3m2!1ses!2smx!4v1516606188585" width="250" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+                      </div>
+                      <div class="col-lg-6 text-center">
+                          <br>
+                          Tonalá 91,<br>
+                          Roma Nte., 06700, CDMX
+                      </div>
+                      <div class="col-lg-6 text-center">
+                        <br>
+                        <abbr title="Phone">Tel:</abbr> 01 55 4398 4366 <br>
+                        Horario: 09 - 21 <br>
+                        Rango de precio: 100 - 400
+                      </div>
+                      <div class="col-lg-12 col-xs-12 text-center">
+                          <br>
+                          <button type="button" class="btn btn-warning">Pedir ahora</button>
+                      </div>
+
+                    </div>
+
+                  </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- modal 4 -->
+            <div class="modal fade" id="miModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            	       <div class="modal-dialog" role="document">
+            		         <div class="modal-content">
+            			            <div class="modal-header">
+            				                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            					                 <span aria-hidden="true">&times;</span>
+            				                </button>
+            				                <h4 class="modal-title text-center" id="myModalLabel">
+                                      Comida rápida: "Taquería la Roma"
+                                    </h4>
+            			            </div>
+            			            <div class="modal-body">
+                                <div class="row">
+                                  <div class="col-lg-12 col-xs-12 text-center">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.9842774606122!2d-99.16359938552604!3d19.413085286895406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff3c1711aced%3A0x683b646596c6336d!2sTaqueria+La+Roma!5e0!3m2!1ses!2smx!4v1516606281003" width="250" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>',
+                                  </div>
+                                  <div class="col-lg-6 text-center">
+                                      <br>
+                                      ETonalá 179,<br>
+                                      Roma Nte., 06700, CDMX
+                                  </div>
+                                  <div class="col-lg-6 text-center">
+                                    <br>
+                                    <abbr title="Phone">Tel:</abbr> 01 55 7893 7343 <br>
+                                    Horario: 16 - 23 <br>
+                                    Rango de precio: 20 - 45
+                                  </div>
+                                  <div class="col-lg-12 col-xs-12 text-center">
+                                      <br>
+                                      <button type="button" class="btn btn-warning">Pedir ahora</button>
+                                  </div>
+
+                                </div>
+
+            			            </div>
+            		        </div>
+            	       </div>
+                  </div>
+
+      <!-- modal 5  -->
+
+      <div class="modal fade" id="miModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+               <div class="modal-dialog" role="document">
+                   <div class="modal-content">
+                        <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                 <span aria-hidden="true">&times;</span>
+                              </button>
+                              <h4 class="modal-title text-center" id="myModalLabel">
+                                Comida rápida: "El Rey del taco"
+                              </h4>
+                        </div>
+                        <div class="modal-body">
+                          <div class="row">
+                            <div class="col-lg-12 col-xs-12 text-center">
+                              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.9936511706433!2d-99.15804878552598!3d19.4126802868956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff233a376e15%3A0x26cacbd6b47d5c04!2sEl+Rey+del+Taco!5e0!3m2!1ses!2smx!4v1516606310064" width="250" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>',
+                            </div>
+                            <div class="col-lg-6 text-center">
+                                <br>
+                                Coahuila & Mérida,<br>
+                                Roma Nte., 06700, CDMX
+                            </div>
+                            <div class="col-lg-6 text-center">
+                              <br>
+                              <abbr title="Phone">Tel:</abbr> 01 55 4389 2322 <br>
+                              Horario: 24 hr <br>
+                              Rango de precio: 18 - 30
+                            </div>
+                            <div class="col-lg-12 col-xs-12 text-center">
+                                <br>
+                                <button type="button" class="btn btn-warning">Pedir ahora</button>
+                            </div>
+
+                          </div>
+
+                        </div>
+                  </div>
+               </div>
+            </div>
+
+
+
+
+
+    <!-- div que cierra el contenedor principal -->
+</div>
+        <script type="text/javascript" src="js/app.js"></script>
+  </body>
+</html>
