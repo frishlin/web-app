@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+
+     <div class="content popup font-style">
+      <p>Foodmap</p>
+    </div>
+
+
+
+    <div class="container-fluid background-container">
+
+
+      <!-- Contiene las letras Foodmap -->
+      <div class="row">
+        <div class="col-lg-12 col-xs-12 text-center font-style">
+          Foodmap
+        </div>
+      </div>
+      <!-- línea con cuadros -->
+
+      <!-- mapa -->
+      <div class="row">
+        <div class="col-lg-12 col-xs-12 mapa" >
+          <iframe class="img-responsive" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3762.8818556948772!2d-99.16178858552587!3d19.417509986892878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scomida+Chihuahua%2C+Roma+Norte%2C+Ciudad+de+M%C3%A9xico%2C+CDMX!5e0!3m2!1ses!2smx!4v1516570396051" width="1600" height="230" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <!-- título Comida cerca de ti -->
+      <div class="row">
+        <div class="col-xs-12 col-lg-12 text-center font-style2">
+            Comida cerca de ti
+        </div>
+      </div>
+
+      <!-- Buscador con icono de lupa -->
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="input-group">
+                <input id="filterBox" type="text" class="form-control" placeholder="Filtrar restaurantes" onkeyup="doFilter()">
+                <div class="input-group-btn">
+                  <button id="addData" type="submit" class="btn btn-default" name="button" onclick="doFilter()">
+                    <i class="glyphicon glyphicon-search"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contenedor de imágenes (restaurante) -->
+      <div class="row cont-imgs-rest" id="imgs-rest">
+        <div class="col-xs-12 col-lg-12">
+          <div class="row">
+            <div class="col-xs-4 col-lg-4 text-center">
+              <!-- <button id="myModal" class="btn-img1" type="button" name="button"></button> -->
+              <button type="button" class="btn btn-primary btn-lg btn-img1" data-toggle="modal" data-target="#miModal"></button>
+              <!-- <img class="img1 img-responsive" src="assets/images/krikas.jpg" alt=""> -->
+            </div>
+            <div class="col-xs-4 col-lg-4 text-center">
+              <button type="button" class="btn btn-primary btn-lg btn-img2" data-toggle="modal" data-target="#miModal"></button>
+            </div>
+            <div class="col-xs-4 col-lg-4 text-center">
+              <button type="button" class="btn btn-primary btn-lg btn-img3" data-toggle="modal" data-target="#miModal"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contenedor de imágenes (rapida) -->
+
+      <div class="row cont-imgs-rap" id="imgs-rap">
+        <div class="col-xs-12 col-lg-12">
+          <div class="row">
+            <div class="col-xs-4 col-lg-4 text-center">
+              <!-- <button id="myModal" class="btn-img1" type="button" name="button"></button> -->
+              <button type="button" class="btn btn-primary btn-lg btn-img4" data-toggle="modal" data-target="#miModal"></button>
+              <!-- <img class="img1 img-responsive" src="assets/images/krikas.jpg" alt=""> -->
+            </div>
+            <div class="col-xs-4 col-lg-4 text-center">
+              <button type="button" class="btn btn-primary btn-lg btn-img5" data-toggle="modal" data-target="#miModal"></button>
+            </div>
+            <div class="col-xs-4 col-lg-4 text-center">
+              <button type="button" class="btn btn-primary btn-lg btn-img6" data-toggle="modal" data-target="#miModal"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	       <div class="modal-dialog" role="document">
+		         <div class="modal-content">
+			            <div class="modal-header">
+				                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					                 <span aria-hidden="true">&times;</span>
+				                </button>
+				                <h4 class="modal-title text-center" id="myModalLabel">
+                          Restaurante "Krikas"
+                        </h4>
+			            </div>
+			            <div class="modal-body">
+                    <div class="row">
+                      <div class="col-lg-12 col-xs-12 text-center">
+                        <iframe class="center" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.8987666590792!2d-99.1660164855259!3d19.416779486893343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff390c617635%3A0x94e17e6df6ad68d0!2sKrikas!5e0!3m2!1ses!2smx!4v1516603109766" width="250" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+                      </div>
+                      <div class="col-lg-6 text-center">
+                          <br>
+                          Esquina Chihuahua,<br>
+                          Eje 2 Ponte Monterrey 207,<br>
+                          Roma Nte., 06700, CDMX
+                      </div>
+                      <div class="col-lg-6 text-center">
+                        <br>
+                        <abbr title="Phone">Tel:</abbr> 01 55 5264 4201 <br>
+                        Horario: 08 - 19 <br>
+                        Rango de precio: 100 - 500
+                      </div>
+                      <div class="col-lg-12 col-xs-12 text-center">
+                          <br>
+                          <button type="button" class="btn btn-warning">Pedir ahora</button>
+                      </div>
+
+                    </div>
+
+			            </div>
+		        </div>
+	       </div>
+      </div>
+
+
+    <!-- div que cierra el contenedor principal -->
+    </div>
+        <script type="text/javascript" src="js/app.js"></script>
+        <script type="text/javascript" src="js/data.js"></script>
+  </body>
+</html>
